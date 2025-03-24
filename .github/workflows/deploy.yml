@@ -43,8 +43,7 @@ jobs:
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@v0.5.1
         with:
-          args: "--delete --exact-timestamps --only-show-errors --multipart-chunk-size-mb=64"
-          source_dir: "build"
+          args: "./build --delete --exact-timestamps --only-show-errors --multipart-chunk-size-mb=64"
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
