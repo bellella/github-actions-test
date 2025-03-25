@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="container">
       <h1 className="title">We are doing a COMP 311 live demo</h1>
-      <p className="subtitle">GitHub Actions is a great tool</p>
+      <p className="subtitle">GitHub Actions is a powerful tool</p>
     </div>
   );
 }
